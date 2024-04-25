@@ -1,0 +1,16 @@
+## -----------------------------------------------------------------------------
+# Let's build a large pairwise comparison that includes over 23000 pairs 
+# create a large group of players
+players <- unique(round(runif(n=2000, min=1, max=50000), 0))
+# Each player will be randomly paired with other 50 players 
+pw <- quickPWCR::randompair(players = players, k = 100)
+
+## -----------------------------------------------------------------------------
+# Let's assume the 'left' column is for winners and 'right' column is for loser
+elo_ratings <- quickPWCR::m_elo(pw, 
+                       c('left', 'right'), 
+                       elo_randomisations = 100, 
+                       initial_rating = 100, 
+                       k = 10, 
+                       cores = 1)
+
