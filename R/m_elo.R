@@ -57,8 +57,8 @@ m_elo <- function(df_pw,
   # df_ <- dplyr::left_join(df_pw, df_j, by=dplyr::join_by(Winner==p))
   # df_ <- dplyr::left_join(df_, df_j, by=dplyr::join_by(Loser==p))
   df_ <- df_pw %>%
-    left_join(df_j, by=c('Winner' = 'p')) %>%
-    left_join(df_j, by=c('Loser' = 'p'))
+    dplyr::left_join(df_j, by=c('Winner' = 'p')) %>%
+    dplyr::left_join(df_j, by=c('Loser' = 'p'))
   df_ <- df_[,c(3,4)]
   names(df_) <- c('Winner', 'Loser')
   # iterating through the mean elo iterations

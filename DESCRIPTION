@@ -1,8 +1,8 @@
 Package: quickPWCR
 Type: Package
-Title: Quickly construct and rating large binary pairwiesd comparisons
-Version: 1.0
-Date: 2024-04-23
+Title: Quickly Construct and Rate Large Binary Pairwised Comparisons
+Version: 1.2
+Date: 2025-01-12
 Authors@R: person("Xiaohao", "Yang", role = c("aut", "cre", "cph"), email = "xiaohaoy@umich.edu")
 Description: A collection of functions for constructing large pairwised comparisons 
              and rating them using Elo rating system with supporting parallel processing.
@@ -11,14 +11,14 @@ Description: A collection of functions for constructing large pairwised comparis
 License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.3.1
-Language: en_GB
+Language: en-US
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 VignetteBuilder: knitr, rmarkdown
 Imports: Rcpp, parallel, pbmcapply, dplyr
 LinkingTo: Rcpp
 NeedsCompilation: yes
-Packaged: 2024-04-24 21:05:09 UTC; yangxiaohao
+Packaged: 2025-01-13 04:16:48 UTC; yangxiaohao
 Author: Xiaohao Yang [aut, cre, cph]
 Maintainer: Xiaohao Yang <xiaohaoy@umich.edu>
 Repository: CRAN
-Date/Publication: 2024-04-25 15:50:12 UTC
+Date/Publication: 2025-01-13 14:10:06 UTC
